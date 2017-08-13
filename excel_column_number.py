@@ -24,3 +24,4 @@ class Solution:
             j = abs(len(column_name)-i-1)
             column_number += letters[column_name[i]] * math.pow(26,j)
         return int(column_number)    
+#### This problem was same as converting binary to decimal ###    
