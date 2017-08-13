@@ -1,3 +1,13 @@
+#Given a column title as appears in an Excel sheet, return its corresponding column number.
+#
+#Example:
+#
+#    A -> 1
+#    
+#    B -> 2
+#    
+#    C -> 3
+#
 class Solution:
     # @param A : string
     # @return an integer
