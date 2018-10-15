@@ -59,8 +59,6 @@
 #        return count % 1000000007     
 def hammingDistance(self, A):
         def bitwise(num_0,num_1):
-            if num_0 == 0 or num_1 == 0:
-                return 0
             return num_0 * num_1
             
         total_sum = 0
