@@ -30,3 +30,21 @@ class Solution:
         if A < 0:
             Q = -Q
         return Q
+###Should be this way##
+class Solution:
+    # @param A : integer
+    # @return an integer
+    def reverse(self, A):
+        save = 0
+        is_neg = 0
+        if A < 0:
+            is_neg = 1
+        A = abs(A)
+        while(A>0):
+            save = (save * 10) + (A%10)
+            if save > 2147483647:
+                return 0
+            A = A/10
+        if is_neg:
+            save = -save
+        return save
